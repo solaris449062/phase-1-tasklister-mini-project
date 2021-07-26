@@ -11,13 +11,19 @@
 
     <form id="create-task-form" action="" method="POST">
       <label for="new-task-description">Task description:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
+      <input type="text" id="new_task_description" name="new-task-description" placeholder="description">
+      <input id="submit-button" type="submit" value="Create New Task">
+      <select id="priority_dropdown" aria-label="Priority">
+        <option value="high">priority: high</option>
+        <option value="medium">priority: medium</option>
+        <option value="low">priority: low</option>
+      </select>
     </form>
 
     <div id="list">
       <h2>My Todos</h2>
       <ul id="tasks">
+
       </ul>
     </div>
 
